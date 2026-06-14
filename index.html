@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equidade no Ensino das C&eacute;lulas Vivas</title>
+    <meta
+      name="description"
+      content="Site do projeto Equidade no Ensino das C&eacute;lulas Vivas, um tabuleiro sensorial inclusivo sobre c&eacute;lulas, acessibilidade e sustentabilidade."
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <canvas id="particle-field" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="page-glow" aria-hidden="true"></div>
+    <a class="skip-link" href="#conteudo">Pular para o conte&uacute;do</a>
+
+    <header class="site-header" id="topo">
+      <a class="brand" href="#topo" aria-label="Voltar ao in&iacute;cio">
+        <span class="brand-mark" aria-hidden="true">EC</span>
+        <span>Equidade Celular</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navega&ccedil;&atilde;o principal">
+        <a href="#projeto">Projeto</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#acessibilidade">Acesso</a>
+        <a href="#creditos">Cr&eacute;ditos</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true"></span>
+        <span class="theme-text">Tema</span>
+      </button>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="titulo-projeto">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Projeto de Biologia | 1&ordm; EPI RH</p>
+          <h1 id="titulo-projeto">
+            Equidade no Ensino das C&eacute;lulas Vivas
+          </h1>
+          <p class="hero-lead">
+            Um tabuleiro sensorial feito para transformar biologia em uma
+            experi&ecirc;ncia acess&iacute;vel, visual, t&aacute;til e criativa.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#fotos">
+              <span aria-hidden="true">+</span>
+              Ver fotos
+            </a>
+            <a class="button secondary" href="#projeto">
+              <span aria-hidden="true">#</span>
+              Sobre o projeto
+            </a>
+          </div>
+
+          <a class="scroll-cue" href="#projeto">
+            <span aria-hidden="true"></span>
+            Role para explorar
+          </a>
+
+          <div class="hero-stats" aria-label="Informa&ccedil;&otilde;es principais">
+            <div>
+              <strong>Inclusivo</strong>
+              <span>Braille e texturas</span>
+            </div>
+            <div>
+              <strong>Sustent&aacute;vel</strong>
+              <span>Materiais reaproveitados</span>
+            </div>
+            <div>
+              <strong>Sensorial</strong>
+              <span>Aprendizado pelo tato</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Pr&eacute;via visual do projeto">
+          <div class="photo-stack">
+            <figure class="stack-card stack-main">
+              <img src="assets/images/foto-4.jpg" alt="Tabuleiro sensorial finalizado com casas numeradas e braille">
+              <figcaption>Tabuleiro finalizado</figcaption>
+            </figure>
+            <figure class="stack-card stack-side">
+              <img src="assets/images/foto-6.jpg" alt="Estudantes pintando o tabuleiro sensorial">
+              <figcaption>Processo criativo</figcaption>
+            </figure>
+            <figure class="stack-card stack-chip">
+              <img src="assets/images/foto-3.jpg" alt="Constru&ccedil;&atilde;o das pe&ccedil;as t&aacute;teis do tabuleiro">
+              <figcaption>Texturas</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-section" id="projeto" aria-labelledby="titulo-proposta">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Proposta</p>
+          <h2 id="titulo-proposta">Ci&ecirc;ncia feita para todo mundo participar</h2>
+          <p>
+            O projeto foi criado para tornar o estudo das c&eacute;lulas mais
+            acess&iacute;vel, inclusivo e divertido, respeitando diferentes formas
+            de aprender.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-number">01</span>
+            <h3>Aprendizado ativo</h3>
+            <p>
+              O conte&uacute;do sai do papel e vira uma experi&ecirc;ncia de
+              observa&ccedil;&atilde;o, toque, descoberta e conversa.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">02</span>
+            <h3>Sa&uacute;de celular</h3>
+            <p>
+              O tabuleiro apresenta h&aacute;bitos saud&aacute;veis e fatores que podem
+              prejudicar as c&eacute;lulas, como infec&ccedil;&otilde;es e contamina&ccedil;&otilde;es.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">03</span>
+            <h3>Equidade real</h3>
+            <p>
+              Braille, contraste visual e materiais com relevo ajudam mais
+              estudantes a interagir com o mesmo conte&uacute;do.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section story-section" aria-labelledby="titulo-historia">
+        <div class="story-panel reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2 id="titulo-historia">Um percurso sobre o corpo humano e suas c&eacute;lulas</h2>
+          <p>
+            Os participantes avan&ccedil;am pelo tabuleiro passando por situa&ccedil;&otilde;es
+            ligadas &agrave; sa&uacute;de das c&eacute;lulas. Casas positivas representam
+            alimenta&ccedil;&atilde;o equilibrada, hidrata&ccedil;&atilde;o e exerc&iacute;cios f&iacute;sicos.
+            Outras casas mostram riscos como inflama&ccedil;&otilde;es, muta&ccedil;&otilde;es,
+            infec&ccedil;&otilde;es e defici&ecirc;ncia energ&eacute;tica.
+          </p>
+        </div>
+        <div class="motion-cards" aria-hidden="true">
+          <span style="--delay: 0s;">hidrata&ccedil;&atilde;o</span>
+          <span style="--delay: .3s;">ribossomos</span>
+          <span style="--delay: .6s;">mitoc&ocirc;ndria</span>
+          <span style="--delay: .9s;">braille</span>
+          <span style="--delay: 1.2s;">c&eacute;lulas</span>
+        </div>
+      </section>
+
+      <section class="section photo-section" id="fotos" aria-labelledby="titulo-fotos">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Galeria</p>
+          <h2 id="titulo-fotos">Fotos do processo e do resultado</h2>
+          <p>
+            Salve as imagens enviadas na pasta <code>assets/images</code> com os
+            nomes <code>foto-1.jpg</code> at&eacute; <code>foto-6.jpg</code> para o
+            mural carregar tudo automaticamente.
+          </p>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="photo-card wide reveal" data-scroll-speed="0.095">
+            <img src="assets/images/foto-1.jpg" alt="Estudante interagindo com o tabuleiro sensorial sobre o corpo humano">
+            <span class="photo-fallback">foto-1.jpg</span>
+            <figcaption>Teste do tabuleiro sensorial</figcaption>
+          </figure>
+          <figure class="photo-card tall reveal" data-scroll-speed="0.13">
+            <img src="assets/images/foto-2.jpg" alt="Detalhe do tabuleiro sensorial com percurso colorido e corpo humano no centro">
+            <span class="photo-fallback">foto-2.jpg</span>
+            <figcaption>Detalhes do percurso</figcaption>
+          </figure>
+          <figure class="photo-card reveal" data-scroll-speed="0.16">
+            <img src="assets/images/foto-3.jpg" alt="Estudantes construindo as pe&ccedil;as t&aacute;teis do tabuleiro">
+            <span class="photo-fallback">foto-3.jpg</span>
+            <figcaption>Constru&ccedil;&atilde;o das pe&ccedil;as</figcaption>
+          </figure>
+          <figure class="photo-card wide reveal" data-scroll-speed="0.11">
+            <img src="assets/images/foto-4.jpg" alt="Tabuleiro finalizado com numera&ccedil;&atilde;o, cores, braille e representa&ccedil;&atilde;o do corpo humano">
+            <span class="photo-fallback">foto-4.jpg</span>
+            <figcaption>Projeto finalizado</figcaption>
+          </figure>
+          <figure class="photo-card reveal" data-scroll-speed="0.145">
+            <img src="assets/images/foto-5.jpg" alt="Estudantes lixando e preparando o tabuleiro">
+            <span class="photo-fallback">foto-5.jpg</span>
+            <figcaption>Prepara&ccedil;&atilde;o da base</figcaption>
+          </figure>
+          <figure class="photo-card tall reveal" data-scroll-speed="0.18">
+            <img src="assets/images/foto-6.jpg" alt="Estudantes pintando as casas e o corpo humano no tabuleiro">
+            <span class="photo-fallback">foto-6.jpg</span>
+            <figcaption>Pintura e acabamento</figcaption>
+          </figure>
+        </div>
+
+        <div class="apple-gallery" aria-label="Segunda cole&ccedil;&atilde;o de fotos animada">
+          <figure class="apple-shot">
+            <img src="assets/images/foto-1.jpg" alt="Tabuleiro sensorial sendo testado">
+          </figure>
+          <figure class="apple-shot">
+            <img src="assets/images/foto-4.jpg" alt="Tabuleiro finalizado com braille">
+          </figure>
+          <figure class="apple-shot">
+            <img src="assets/images/foto-2.jpg" alt="Detalhe do tabuleiro com corpo humano no centro">
+          </figure>
+          <figure class="apple-shot">
+            <img src="assets/images/foto-6.jpg" alt="Acabamento do tabuleiro">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section access-section" id="acessibilidade" aria-labelledby="titulo-acesso">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Acessibilidade</p>
+          <h2 id="titulo-acesso">Braille, texturas e contraste trabalhando juntos</h2>
+          <p>
+            A experi&ecirc;ncia foi pensada para que pessoas com defici&ecirc;ncia
+            visual tamb&eacute;m possam participar da aula por meio do tato e da
+            leitura em braille.
+          </p>
+        </div>
+
+        <div class="access-list">
+          <article class="reveal">
+            <h3>Braille</h3>
+            <p>Marca&ccedil;&otilde;es t&aacute;teis ajudam na leitura das casas e desafios.</p>
+          </article>
+          <article class="reveal">
+            <h3>Texturas</h3>
+            <p>Algod&atilde;o, milho, papel mach&ecirc; e linhas tornam o tabuleiro sensorial.</p>
+          </article>
+          <article class="reveal">
+            <h3>Contraste</h3>
+            <p>Cores fortes separam h&aacute;bitos saud&aacute;veis, riscos e estruturas celulares.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section materials-section" aria-labelledby="titulo-materiais">
+        <div class="materials-copy reveal">
+          <p class="eyebrow">Sustentabilidade</p>
+          <h2 id="titulo-materiais">Baixo custo, reaproveitamento e criatividade</h2>
+          <p>
+            O projeto mostra que um material did&aacute;tico completo pode nascer de
+            recursos simples, recicl&aacute;veis e reaproveitados.
+          </p>
+        </div>
+
+        <ul class="material-tags reveal" aria-label="Materiais utilizados">
+          <li>Papel mach&ecirc;</li>
+          <li>Quadro velho</li>
+          <li>Algod&atilde;o</li>
+          <li>Milho</li>
+          <li>Linhas de croch&ecirc;</li>
+          <li>Madeira reutilizada</li>
+          <li>Tintas</li>
+          <li>Materiais reaproveitados</li>
+        </ul>
+      </section>
+
+      <section class="section credits-section" id="creditos" aria-labelledby="titulo-creditos">
+        <div class="credit-card reveal">
+          <p class="eyebrow">Cr&eacute;ditos</p>
+          <h2 id="titulo-creditos">Site feito por Alexandre</h2>
+          <p>
+            Projeto visual e desenvolvimento do site por <strong>Alexandre</strong>.
+            GitHub: <a href="https://github.com/zeus123-e" target="_blank" rel="noreferrer">zeus123-e</a>.
+          </p>
+        </div>
+
+        <div class="credit-card outline reveal">
+          <p class="eyebrow">Dire&ccedil;&atilde;o</p>
+          <h2>Professor Andr&eacute; Carvalho</h2>
+          <p>
+            Material de estudo: <strong>Tabuleiro Sensorial</strong>.
+            Turma: <strong>1&ordm; EPI RH</strong>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Equidade no Ensino das C&eacute;lulas Vivas</p>
+      <a href="#topo">Voltar ao topo</a>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
